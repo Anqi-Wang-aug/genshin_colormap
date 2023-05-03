@@ -4,7 +4,7 @@ from matplotlib import pyplot as plt
 import matplotlib as mpl
 
 colors = {'qiqi':['#e7e9ea', '#9d7197', '#714076', '#292854', '#666794', '#aca497'],
-          'klee':['#3d231f', '#efe5d7', '#9c3320'],
+          'klee':['#F8ECD4','#cda67f', '#A3250F', '#372221'],
           'sayu':['#e9dac0', '#c69b7a', '#969376', '#554542'],
           'diona':['#353340', '#e5d8d3', '#a57044', '#cda3a0', '#54749c'],
           'dori':['#402b59', '#b174c3', '#f5e2f0', '#a57d56'],
