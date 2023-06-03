@@ -3,13 +3,14 @@ from matplotlib.colors import ListedColormap, LinearSegmentedColormap
 from matplotlib import pyplot as plt
 import matplotlib as mpl
 
-colors = {'qiqi':['#e7e9ea', '#9d7197', '#714076', '#292854', '#666794', '#aca497'],
+colors = {'qiqi':['#e7e9ea', '#9d7197', '#714076', '#666794','#292854'],
           'klee':['#F8ECD4','#cda67f', '#A3250F', '#372221'],
           'sayu':['#e9dac0', '#c69b7a', '#969376', '#554542'],
           'diona':['#353340', '#e5d8d3', '#a57044', '#cda3a0', '#54749c'],
           'dori':['#402b59', '#b174c3', '#f5e2f0', '#a57d56'],
           'nahida':['#404c31', '#667840', '#8da06d', '#f1f1e8', '#ddd9bd', '#685639'],
-          'yaoyao':['#5a3b29', '#d8c966', '#d9d59c', '#8f9551', '#64684c']}
+          'yaoyao':['#5a3b29', '#d8c966', '#d9d59c', '#8f9551', '#64684c'],
+          'paimon': ['#33485c','#5c8ca4', '#f4f4f2','#f1ddc4', '#d3b088']}
 
 try:
     for key in colors:
@@ -26,7 +27,7 @@ for key in colors:
     color_map = LinearSegmentedColormap.from_list(key, colors[key])
     mpl.colormaps.register(cmap=color_map)
 
-    plt.subplot(170+graph_num)
+    plt.subplot(180+graph_num)
     
     plt.scatter(x,y,c=color_bar, cmap=key)
     plt.colorbar()
